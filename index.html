@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <h1 class="title">Progress</h1>
+
+    <div class="content">
+      <div
+        class="progress"
+        id="progress"
+        role="progressbar"
+        aria-label="Progress"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="60"
+      >
+        <div class="progress__circle"></div>
+      </div>
+
+      <div class="controls">
+        <div class="control">
+          <input class="value" id="value" type="number" min="0" max="100" value="60">
+          <label for="value">Value</label>
+        </div>
+
+        <div class="control">
+          <input class="switch" id="animate" type="checkbox">
+          <label for="animate">Animate</label>
+        </div>
+
+        <div class="control">
+          <input class="switch" id="hide" type="checkbox">
+          <label for="hide">Hide</label>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
